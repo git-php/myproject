@@ -1,0 +1,76 @@
+.mr0{margin-right:0;}
+#bd{background:url(../images/bg.jpg) no-repeat center top;height:100%;}
+#bd .bd-inner .bd-section1{padding:60px 0;overflow:hidden;}
+#bd .bd-inner .bd-section1 .iphone{width:57%;}
+#bd .bd-inner .bd-info{height:68px;background:#6e0001;overflow: hidden;position: relative;padding:30px;}
+#bd .bd-inner .bd-info p{margin-bottom:20px;}
+/*#bd .bd-inner .bd-info p.bd-information{position: relative;}*/
+#bd .bd-inner .bd-info p input{height:22px;}
+#bd .bd-inner .bd-info p span{font-size:16px;font-weight: bold;color:#fff;padding-right:15px;}
+#bd .bd-inner .bd-info p span.bd-tel{padding-left:28px;}
+#bd .bd-inner .bd-info p input.bd-email{width:196px;margin-right:34px;}
+#bd .bd-inner .bd-info p input.bd-telephone{width:168px;height:26px;}
+#bd .bd-inner .bd-info .alert-error{position: absolute;top: 55px;left: 469px;}/*手机验证*/
+#bd .bd-inner .bd-info p input.xm{width:100px;margin-right:6px;}
+#bd .bd-inner .bd-info p.bd-person span.sex{font-size:14px;color:#fff;line-height:24px;padding-right:4px;}
+#bd .bd-inner .bd-info p.bd-person .bd-sex{width:12px;height:10px;}
+#bd .bd-inner .bd-info p select{height:24px;width:83px;font-size:14px;color:#555;}
+#bd .bd-inner .bd-info .tj{position: absolute;top: 9px;right: 245px;}
+#bd .bd-inner .bd-info img{position: absolute;top:0px;right:40px;}
+#bd .bd-inner .bd-notice{height:26px;line-height:26px;background: #fde59d;padding-left:30px;color:#6b3906;font-weight: bold;font-size:10px;}
+#bd .bd-inner .bd-prize{margin:80px 0 40px 0;}
+/*邮箱验证*/
+#bd .bd-inner .bd-info .bd-person{position: relative;}
+#bd .bd-inner .bd-info .bd-person .alert-error{position: absolute;top: 56px;left: 433px;}
+/*转盘*/
+.ly-plate{position:relative;width:509px;height:509px;}
+.rotate-bg{width: 509px;height: 509px;background: url(../images/ly-plate.png);position: absolute;top: 0;left: 0;margin-top: 0%;}
+.ly-plate div.lottery-star{width:214px;height:214px;position:absolute;top:150px;left:147px;outline:none}
+.ly-plate div.lottery-star #lotteryBtn{cursor: pointer;position: absolute;top:0;left:0;*left:-107px;}
+/*转盘*/
+.bd-lottery{overflow: hidden;}
+.bd-lottery-left{width:50%;}
+.bd-lottery-left p{text-align: center;padding-top:25px;font-size:18px;color:#fff;font-weight: bold;}
+.bd-lottery-left p span{font-size:24px;padding:0 5px;}
+/*中奖名单*/
+.bd-lottery-right #roll{height:300px;overflow:hidden;list-style:none;}
+.bd-lottery-right #roll li{height:30px; padding-left:10px;line-height:30px;}
+.bd-lottery-right #roll li a{font-size:14px;}
+.bd-lottery-right #roll li span.iphone{padding:0 56px 0 30px;}
+.bd-lottery-right #roll li span.time{padding-left:27px;}
+.bd-lottery-right a{font-size:12px; text-decoration:none; font-family:'宋体';color:#fff;}
+/*中奖名单*/
+.bd-query{text-align: center;border-top:2px solid #fde59d;margin-top:15px;width:89%;position: relative;}
+.bd-query p{font-size:18px;color:#fff;line-height:40px;}
+.bd-query p.bd-zjcx{padding-top:10px;font-weight: bold;}
+.bindPhone{width:200px;height:37px;border:0;font-size:14px;}
+/*输入错误手机号提醒*/
+.bd-information .alert-error{position: absolute;top: 90px;left: 130px;}
+.bd-information .search{position: absolute;top: 50px;right: 42px;}
+
+.bd-process{padding:60px 0 50px 0;}
+.bd-prizelist .bd-prizelist-left{width:60%;}
+.bd-prizelist p{font-size:14px;color:#fff;font-weight: bold;line-height:24px;}
+.bd-prizelist-right img{padding-left:32%;padding-top:30px;}
+.bd-prizelist-right input{width:200px;height:37px;border:0;font-size:14px;font-weight: normal;}
+
+.bd-img{padding:30px 0;overflow:hidden}
+.bd-img ul li{float: left;margin-right:6px;width:190px;height:165px;}
+.bd-img ul li img{width:190px;height:165px;}
+.bd-activity{text-align: center;padding-bottom:30px;}
+/*down效果*/
+@-webkit-keyframes bounce{
+0%,20%,50%,80%,100%{-webkit-transform:translateY(0)}
+40%{-webkit-transform:translateY(-8px)}
+60%{-webkit-transform:translateY(-4px)}
+}
+@-moz-keyframes bounce{
+0%,20%,50%,80%,100%{-moz-transform:translateY(0)}
+40%{-moz-transform:translateY(-8px)}
+60%{-moz-transform:translateY(-4px)}
+}
+.down{
+-webkit-animation:bounce 1s .2s ease Infinite;
+-moz-animation:bounce 1s .2s ease Infinite;
+animation:bounce 1s .2s ease Infinite;
+}

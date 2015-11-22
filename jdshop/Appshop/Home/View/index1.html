@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>city</title>
+	<script src="__PUBLIC__/Admin/js/jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		getP();
+		getc();
+		geta();
+
+	});
+	// 点击事件获取区域信息
+	function geta(){
+		$('#city').change(function(){
+			$('#area')[0].length=0;
+			// $('#childCat')[0].length=0;
+			//发送
+			// alert($(this).val());
+			$.get('__URL__/city',{id:$(this).val()},function(msg){
+				//
+				
+				$(msg).each(function(i,item){
+					var op=new Option(item.c_name,item.c_id);
+					$('#area').append(op);
+				});
+			});
+
+		});
+	}
+
+
+	// 点击事件获取城市信息
+	function getc(){
+		$('#prov').change(function(){
+			$('#city')[0].length=0;
+			// $('#childCat')[0].length=0;
+			//发送
+			// alert($(this).val());
+			$.get('__URL__/city',{id:$(this).val()},function(msg){
+				//
+				
+				$(msg).each(function(i,item){
+					var op=new Option(item.c_name,item.c_id);
+					$('#city').append(op);
+				});
+			});
+
+		});
+	}
+	// 页面加载的时候，就取出省份信息
+	function getP(){
+		$.get('__URL__/city',{id:1},function(msg){
+			$(msg).each(function(i,item){
+				var op=new Option(item.c_name,item.c_id);
+				$('#prov').append(op);
+
+			});
+		});
+	}
+	</script>
+</head>
+<body>
+省市区上级联动效果，啦啦啦啦！！！！！！<br /> <hr />
+<select id='prov'><option value='-1'>--选择省份--</option></select>
+<select id='city'><option value='-1'>--选择城市--</option></select>
+<select id='area'><option value='-1'>--选择地区--</option></select>
+	
+</body>
+</html>

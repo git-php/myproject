@@ -1,0 +1,7 @@
+/*footer部分*/
+#footer .ft-nav{height:35px;background:url(../images/ft-bg.jpg) repeat-x;}
+#footer .ft-nav ul{width:64%;margin:0 auto;padding-top:10px;padding-left:20px;}
+#footer .ft-nav ul li{float: left;padding:0 20px;border-right:1px solid #d2d1d1;}
+#footer .ft-nav ul li.last{border-right:0;}
+#footer .ft-inner p{width:56%;margin: 0 auto;padding: 20px 0;padding-left: 172px;background: url(../images/huilogo.png) no-repeat;line-height: 40px;}
+#footer .ft-inner p span{margin:0 8px;}

@@ -1,0 +1,29 @@
+body{color:#535b65; font: 12px/1.5 Microsoft Yahei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+a{text-decoration: none;color:#666;}
+a:hover{color:#00a0ea;}
+.fl{float:left;}
+.fr{float:right;}
+.cl{clear:both;}
+.mr65{margin-right:65px}
+.hd-inner,.bd-inner,.ft-inner{width:980px;margin:0 auto;}
+.hd-top{overflow:hidden;padding-top:8px;height:22px;background:#eeeeee;border-bottom:1px solid #e6e6e6;}
+.hd-top a{padding-right:20px;}
+.hd-top-left{padding-left:20px;}
+.hd-top-right{padding-right:20px;}
+.hd-top-reg{color:#8fc320;}
+.hd-top-reg:hover{color:#23ac38;}
+.hd-content{padding-bottom:20px;overflow: hidden;}
+.hd-logo{padding-top:20px;}
+.hd-logo h1{width:329px;height:50px;background: url(../images/logo.png) no-repeat;}
+.hd-logo h1 a{text-indent:-99999px;display:block;color:#535b65;}
+.hd-nav{padding:40px 0 0 20px;}
+.hd-nav ul li{float: left;width:102px;}
+.hd-nav ul li a{font-size:16px;display: block;width:102px;height:30px;text-align: center;}
+/*导航部分*/
+.hd-triangle{ text-indent: -9999px; color:#fff;background: url(../images/sanjiao.png) 45px 0px no-repeat;z-index: 100000;font-size:16px;width:100px;height:7px;position: absolute;top:93px;display: none;}
+.hd-nav .hd-nav-sub{width:100px;position: absolute;top: 99px;z-index:9999999;background:#fff;overflow: hidden;padding:10px 0;border:1px solid #d2d1d1;display: none;}
+.hd-nav .hd-nav-sub li{width:100px;height:40px;margin-left:0;}
+.hd-nav .hd-nav-sub li a{width:100px;height:40px;display: block;text-align: center;font-size:14px;line-height:40px;}
+.hd-nav .hd-nav-sub li a:hover{background:#E0E0E0;}
+.hd-nav-list:hover .hd-nav-sub{display: block;}
+.hd-nav-list:hover .hd-triangle{display: block;}
